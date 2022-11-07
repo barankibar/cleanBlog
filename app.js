@@ -48,6 +48,7 @@ app.get("/posts/edit/:id", pageController.getIndexPage);
 app.get("/posts/:id", postController.getPosts);
 app.put("/posts/:id", postController.updatePost);
 app.post("/AddNewPost", postController.createPost);
+app.delete("/posts/:id", postController.deletePost);
 
 const port = 3000;
 app.listen(port, () => console.log(`Server started on ${port} port`));
