@@ -28,6 +28,12 @@
           <%= post.detail %>
       </div>
     </div>
+    <div>
+      <a href="/posts/edit/<%= post._id %>">Edit Post</a>
+    </div>
+    <div>
+      <a href="/posts/<%= post._id %>?_method=DELETE">Delete Post</a>
+    </div>
   </article>
 
   <hr>
